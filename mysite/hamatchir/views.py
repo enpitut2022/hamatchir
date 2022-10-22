@@ -1,12 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from matplotlib import image
-
 
 def index(request):
-    myapp_data = {
-    'app': 'Django'
-    }
-    return render(request, 'index.html',myapp_data)
+    return render(request, 'hamatchir/index.html')
 
 # Create your views here.
