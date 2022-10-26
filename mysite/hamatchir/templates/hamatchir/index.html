@@ -1,15 +1,21 @@
 {% load static %}
 <html>
-<head>
-<title>template test</title>
-<link rel="stylesheet" href="{%static 'hamatchir/style.css' %}">
-</head>
-<body>
-<h1>This is django test.</h1>
-<div class="basic">
-    <img class="hair_style" src="{%static 'hamatchir/images/aaa.png' %}">
-    <img class="yajima" src= "{% static 'hamatchir/images/yajima.png' %}">
-    <img class="yajima2" src= "{% static 'hamatchir/images/yajima.png' %}">
-</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>template test</title>
+        <link rel="stylesheet" href="{%static 'hamatchir/style.css' %}">
+    </head>
+    <body>
+        <h1>This is django test.</h1>
+        <div class="basic">
+            <img class="hair_style" src="{%static 'hamatchir/images/aaa.png' %}" />
+            <img class="yajima" src= "{% static 'hamatchir/images/yajima.png' %}" />
+            <img class="yajima2" src= "{% static 'hamatchir/images/yajima.png' %}" />
+            <!-- inputタグの拡張子の指定が必要 png, jpeg, jpg etc... -->
+            <input type="file" id="img-file"> 
+            <img  id="input-img" />
+
+        </div>
+        <script src="{%static 'hamatchir/index.js' %}"></script>
+    </body>
 </html>
