@@ -6,5 +6,10 @@
 <body>
 <h1>This is django test.</h1>
 <img src= "{% static 'hamatchir/images/yajima.png' %}">
+<form action="{% url 'index' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>{{ upload_form.as_p }}</p>
+    <p><input type="submit" value="アップロード"></p>
+</form>
 </body>
 </html>
