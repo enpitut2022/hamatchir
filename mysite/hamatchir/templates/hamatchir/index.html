@@ -2,9 +2,14 @@
 <html>
 <head>
 <title>template test</title>
+<link rel="stylesheet" href="{%static 'hamatchir/style.css' %}">
 </head>
 <body>
 <h1>This is django test.</h1>
-<img src= "{% static 'hamatchir/images/yajima.png' %}">
+<div class="basic">
+    <img class="hair_style" src="{%static 'hamatchir/images/aaa.png' %}">
+    <img class="yajima" src= "{% static 'hamatchir/images/yajima.png' %}">
+    <img class="yajima2" src= "{% static 'hamatchir/images/yajima.png' %}">
+</div>
 </body>
 </html>

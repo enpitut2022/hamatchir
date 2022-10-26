@@ -1,0 +1,11 @@
+.basic{
+    position: relative
+}
+
+.hair_style{
+    position: absolute;
+    left: -90px;
+    top: -160px;
+    /* width: 80%;
+    height: 80%; */
+}
