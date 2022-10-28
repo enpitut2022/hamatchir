@@ -16,10 +16,13 @@
 }
 
 .yajima{
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
+.yajima-txt{
+    text-align: center;
+}
 .drag-and-drop {
     cursor: move;
     position: absolute;
@@ -28,4 +31,9 @@
 
 .drag {
     z-index: 1001;
+}
+#input-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

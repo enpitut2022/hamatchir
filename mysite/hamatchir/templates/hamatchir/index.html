@@ -12,13 +12,15 @@
             <button id="plus">拡大</button>
             <button id="minus">縮小</button>
             <button id="reset">リセット</button>
+            <p>Upload</p>
+            <input type="file" id="img-file"> 
             <div id="aaa">
                 <img class="hair_style drag-and-drop" src="{%static 'hamatchir/images/aaa.png' %}" />
             </div>
+            <img  id="input-img" />
+            <p class="yajima-txt">サンプル：矢島君</p>
             <img class="yajima" src= "{% static 'hamatchir/images/yajima.png' %}" />
             <!-- inputタグの拡張子の指定が必要 png, jpeg, jpg etc... -->
-            <input type="file" id="img-file"> 
-            <img  id="input-img" />
 
         </div>
         <script src="{%static 'hamatchir/index.js' %}"></script>
