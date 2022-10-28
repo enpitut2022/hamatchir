@@ -1,11 +1,31 @@
 .basic{
-    position: relative
+    position: relative;
+    width:100%;
 }
 
 .hair_style{
     position: absolute;
-    left: -90px;
-    top: -160px;
+    /* left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%); */
+    margin-left: auto;
+    margin-right: auto;
+
     /* width: 80%;
     height: 80%; */
+}
+
+.yajima{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.drag-and-drop {
+    cursor: move;
+    position: absolute;
+    z-index: 1000;
+}
+
+.drag {
+    z-index: 1001;
 }
