@@ -1,0 +1,28 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>template test</title>
+        <link rel="stylesheet" href="{%static 'hamatchir/style.css' %}">
+    </head>
+    <body>
+        <h1>Welcom to hamatchir!</h1>
+        <div class="basic">
+            <p>髪型サイズ設定</p>
+            <button id="plus">拡大</button>
+            <button id="minus">縮小</button>
+            <button id="reset">リセット</button>
+            <p>Upload</p>
+            <input type="file" id="img-file"> 
+            <div id="aaa">
+                <img class="hair_style drag-and-drop" src="{%static 'hamatchir/images/aaa.png' %}" />
+            </div>
+            <img  id="input-img" />
+            <p class="yajima-txt">サンプル：矢島君</p>
+            <img class="yajima" src= "{% static 'hamatchir/images/yajima.png' %}" />
+            <!-- inputタグの拡張子の指定が必要 png, jpeg, jpg etc... -->
+
+        </div>
+        <script src="{%static 'hamatchir/index.js' %}"></script>
+    </body>
+</html>

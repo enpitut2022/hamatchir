@@ -1,0 +1,39 @@
+.basic{
+    position: relative;
+    width:100%;
+}
+
+.hair_style{
+    position: absolute;
+    /* left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%); */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* width: 80%;
+    height: 80%; */
+}
+
+.yajima{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.yajima-txt{
+    text-align: center;
+}
+.drag-and-drop {
+    cursor: move;
+    position: absolute;
+    z-index: 1000;
+}
+
+.drag {
+    z-index: 1001;
+}
+#input-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
