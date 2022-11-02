@@ -1,1 +1,1 @@
-web: gunicorn hamatchir.wsgi --log-file -
+web: gunicorn manage.py:app
