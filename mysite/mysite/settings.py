@@ -47,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -149,3 +150,17 @@ STATIC_URL = '/static/'
 
 # # デプロイ用に静的ファイルを収集するディレクトリを指定（開発環境では不要）
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+# 以下Heroku用の設定ファイル
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+DEBUG = False
+
+try:
+    from mysite.mysite.local_settings import *
+except ImportError:
+    pass
+
+if not DEBUG:
+    import django_heroku
+    django_heroku.settings(locals())

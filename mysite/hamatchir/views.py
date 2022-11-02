@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from matplotlib import image
 
 
 def index(request):
